@@ -1,0 +1,3 @@
+[submodule "mongo-database"]
+	path = mongo-database
+	url = https://github.com/RunningClubApp/mongo-database
