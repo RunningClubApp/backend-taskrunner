@@ -1,3 +1,6 @@
 [submodule "mongo-database"]
 	path = mongo-database
 	url = https://github.com/RunningClubApp/mongo-database
+[submodule "type-validators"]
+	path = type-validators
+	url = git@github.com:RunningClubApp/type-validators.git
