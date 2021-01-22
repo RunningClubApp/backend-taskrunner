@@ -19,6 +19,9 @@
   "homepage": "https://github.com/RunningClubApp/backend-taskrunner#readme",
   "dependencies": {
     "agenda": "^4.0.1",
-    "express": "^4.17.1"
+    "agendash2": "^0.8.2",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.11.13"
   }
 }

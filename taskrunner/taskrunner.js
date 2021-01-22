@@ -15,9 +15,9 @@ const jobCFG = require('../jobs.config')
 function Start (envProd = false) {
   let url
   if (envProd) {
-    url = `mongodb+srv://${dbCFG.user}:${dbCFG.pwd}@${dbCFG.url}/${dbCFG.db}`
+    url = `mongodb+srv://${dbCFG.user}:${dbCFG.pwd}@${dbCFG.url}/${dbCFG.db}-jobs`
   } else {
-    url = `mongodb://${dbCFG.url}:${dbCFG.port}/${dbCFG.db}`
+    url = `mongodb://${dbCFG.url}:${dbCFG.port}/${dbCFG.db}-jobs`
   }
 
   const agenda = new Agenda({ db: { address: url } })
