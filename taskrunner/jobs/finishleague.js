@@ -24,8 +24,8 @@ module.exports = (agenda) => {
 
       // map exercises to get [[{lat, lng}, ...], [...], ...]
       const paths = exercises.map((ex) => {
-        return ex.path.map((p) => {
-          return { lat: ex.coords.lat, lng: ex.coords.lng }
+        return ex.path.map((pt) => {
+          return { lat: pt.coords.lat, lng: pt.coords.lng }
         })
       })
 
@@ -34,7 +34,7 @@ module.exports = (agenda) => {
       if (paths.length > 0) {
         distance = paths.reduce((tot, path) => {
           return tot + calculate.DistanceOfPath(path)
-        })
+        }, 0)
       }
 
       results.push({ userID: user, distance })

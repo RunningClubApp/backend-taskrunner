@@ -13,8 +13,6 @@ module.exports = (agenda) => {
     const length = req.query.ln
     const repeat = req.query.r === undefined ? 'false' : req.query.r
 
-    console.log(leagueID, length, repeat)
-
     let valid = OIDValidator(leagueID)
     if (valid.err) {
       return res.status(400).json({ success: false, errors: { league: valid.errors } })
